@@ -34,7 +34,6 @@ function Banner() {
 		style={{
 			backgroundSize:"cover",
 			backgroundImage: `url("https://image.tmdb.org/t/p/original/${movie?.backdrop_path}")`,
-
 			backgroundPosition:"center center",
 		}}
 		>
@@ -46,7 +45,7 @@ function Banner() {
 		<button className="banner__button">play</button>
 		<button className="banner__button">my list</button>
 		</div>
-		<h1 className="banner_description">
+		<h1 className="banner__description">
 		{truncate(movie?.overview,150)}
 		</h1>
 		</div>
